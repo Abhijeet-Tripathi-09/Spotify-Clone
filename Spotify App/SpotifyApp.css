@@ -1,0 +1,818 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+.header-left {
+    position: fixed;
+    height: 100vh;
+    width: 30.5%;
+    padding: 10px;
+}
+
+.header-left .home {
+    height: 30px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+.header-left .first-container {
+    height: 110px;
+    width: 100%;
+    background-color: rgba(75, 75, 75, 0.219);
+    border-color: rgba(75, 75, 75, 0.219);
+    border-radius: 8px;
+    padding: 15px;
+}
+.header-left .home i {
+    font-size: 25px;
+}
+.header-left .home p {
+    font-size: 15.5px;
+    padding-left: 17px;
+    padding-top: 4px;
+    font-weight: 600;
+}
+.header-left .search {
+    height: 30px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-top: 19px;
+    cursor: pointer;
+}
+.header-left .search p span i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+.header-left .search p {
+    font-size: 15.5px;
+    color: rgb(185, 185, 185);
+    transition: .3s;
+    padding-top: 4px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.header-left .search p:hover {
+    color: white;
+}
+
+/* -------------------------- Second Container ------------------- */
+
+.header-left .second-container {
+    height: 570px;
+    width: 100%;
+    background-color: rgba(75, 75, 75, 0.219);
+    border-color: rgba(75, 75, 75, 0.219);
+    border-radius: 8px;
+    padding: 4px 10px 10px 10px;
+    margin-top: 10px;
+}
+.header-left .library {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 10px;
+}
+.header-left .library p {
+    margin: 0;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+.header-left .library p i {
+    font-size: 25px;
+    margin: 0 0 0 2px;
+    padding-right: 13px;
+}
+.header-left .library p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-right: 162px;
+    padding-top: 4px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+.header-left .library #plus, .header-left .library #right-arrow {
+    font-size: 18px;
+    margin-left: 25px;
+    cursor: pointer;
+    color: gray;
+    transition: .3s;
+}
+.header-left .library p:hover {
+    color: #fff;
+}
+.header-left .library #plus:hover, .header-left .library #right-arrow:hover {
+    color: #fff;
+}
+.header-left .playlist {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 75px;
+    border-radius: 50px;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 11px;
+    margin-left: 5px;
+    border: none;
+    background-color: rgba(75, 75, 75, 0.301);
+}
+.header-left .playlist p {
+    font-size: 13.5px;
+    font-weight: 600;
+}
+.header-left .recent {
+    height: 40px;
+    width: 100%;
+    padding: 0px 0 0 5px;
+    display: flex;
+}
+.header-left .recent #recent-search {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgb(168, 168, 168);
+    transition: .3s;
+    cursor: pointer;
+}
+.header-left .recent p {
+    font-size: 13px;
+    margin-left: 65%;
+    color: rgb(168, 168, 168);
+    transition: .3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px 10px 10px 15px ;
+}
+.header-left .recent p span{
+    font-size: 17px;
+    padding: 5px;
+}
+.header-left .recent #recent-search:hover {
+    color: #fff;
+    background-color: rgba(75, 75, 75, 0.301);
+}
+.header-left .recent p:hover {
+    color: white;
+}
+.music {
+    height: 60px;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    padding-left: 6px;
+}
+.music i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 3px;
+    font-size: 23px;
+    background-color: rgba(75, 75, 75, 0.301);
+    color: gray;
+}
+.music-content {
+    font-size: 13px;
+    padding-left: 15px;
+    line-height: 25px;
+}
+.music-content h4 {
+    color: gray;
+}
+.music:hover {
+    background-color: rgba(92, 92, 92, 0.164);
+}
+
+
+/* -------------------------------- Main ------------------------- */
+
+
+.main{
+    position: fixed;
+    height: 87.5%;
+    width: 69.2%;
+    margin-left: 30.3%;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: rgba(129, 129, 129, 0.219);
+    border-color: rgba(75, 75, 75, 0.219);
+    border-radius: 8px;
+    padding: 16px 20px 0 16px;
+}
+
+.main .main-top {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main .main-top .arrows {
+    height: 40px;
+    width: 73px;
+    display: flex;
+    justify-content: space-between;
+}
+.main .main-top .arrows i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    color: gray;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+.main .main-top .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    width: 350px;
+}
+.main .main-top .buttons button {
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+#install-now-btn {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.822);
+    cursor: pointer;
+}
+.main .main-top .buttons #bell, .main .main-top .buttons #profile  {
+    height: 35px;
+    width: 35px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: rgb(197, 197, 197);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main .main-top .buttons #bell:hover {
+    color: white;
+}
+
+.main .main-top .buttons #bell:hover, .main .main-top .buttons #profile:hover, .main .main-top .buttons button:hover {
+    transform: scale(1.04);
+}
+
+.button-chs {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+}
+
+.main .button-chs {
+    color: white;
+}
+.main .button-chs button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.171);
+    color: white;
+    transition: .2s;
+}
+.main .button-chs button:hover {
+    background-color: white;
+    color: black;
+}
+p {
+    color: white;
+}
+.main #main-main {
+    position: absolute;
+    top: 17%;
+    left: -.0%;
+    height: 83%;
+    width: 995px;
+    overflow-x: scroll;
+    padding: 0 5px;
+}
+.main #main-main::-webkit-scrollbar {
+    display: none;
+}
+
+.main #main-main .first-line {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 15px 15px 15px;
+}
+.main #main-main .first-line p {
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.main #main-main .first-line a {
+    font-size: 15px;
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+.main #main-main .first-line p:hover, .main #main-main .first-line a:hover {
+    text-decoration: underline;
+}
+
+.main #main-main .card {
+    height: 280px;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 2px;
+    padding: 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* --------------------------------------------------------------- */
+
+
+.main #main-main .card .item-1 div i{
+    top: 35%;
+    left: 13%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 15px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-1 div i:hover,
+.main #main-main .card .item-2 div i:hover,
+.main #main-main .card .item-3 div i:hover,
+.main #main-main .card .item-4 div i:hover,
+.main #main-main .card .item-5 div i:hover,
+.main #main-main .card .item-6 div i:hover,
+.main #main-main .card .item-7 div i:hover,
+.main #main-main .card .item-8 div i:hover,
+.main #main-main .card .item-9 div i:hover,
+.main #main-main .card .item-10 div i:hover{
+    transform: scale(1.1);
+}
+.main #main-main .card .item-1 img {
+    height: 170px;
+    border-radius: 5px;
+}
+.main #main-main .card .item-2 div i{
+    top: 35%;
+    left: 33%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 14px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-2 img {
+    height: 170px;
+    border-radius: 5px;
+}
+.main #main-main .card .item-3 div i{
+    top: 35%;
+    left: 52.5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 14px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-3 img {
+    height: 170px;
+    border-radius: 5px;
+}
+.main #main-main .card .item-4 div i{
+    top: 35%;
+    left: 72.5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 14px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-4 img {
+    height: 170px;
+    border-radius: 5px;
+}
+.main #main-main .card .item-5 div i{
+    top: 35%;
+    left: 92.5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 14px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-5 img {
+    height: 170px;
+    border-radius: 5px;
+}
+.main #main-main .card .item-6 div i{
+    position: absolute;
+    top: 97.5%;
+    left: 13%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 14px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-6 img {
+    height: 170px;
+    border-radius: 5px;
+}
+.main #main-main .card .item-7 div i{
+    top: 97.5%;
+    left: 33%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 14px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-7 img {
+    height: 170px;
+    border-radius: 5px;
+}
+.main #main-main .card .item-8 div i{
+    top: 97.5%;
+    left: 52.8%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 14px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-8 img {
+    height: 170px;
+    border-radius: 5px;
+}
+.main #main-main .card .item-9 div i{
+    top: 97.5%;
+    left: 72.5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 14px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-9 img {
+    height: 170px;
+    border-radius: 5px;
+}
+.main #main-main .card .item-10 div i{
+    top: 97.5%;
+    left: 92.2%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: none;
+    position: absolute;
+    font-size: 22px;
+    margin-left: 5px;
+    padding: 14px 15px 10px 18px;
+    transition: .3s;
+    animation: rocket .4s linear;
+}
+.main #main-main .card .item-10 img {
+    height: 170px;
+    border-radius: 5px;
+}
+@keyframes rocket {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------------------------------- */
+
+
+.main #main-main .card h2 {
+    font-size: 15px;
+    color: #fff;
+    padding: 8px 0;
+}
+.main #main-main .card h3 {
+    width: 80%;
+    font-size: 14px;
+    color: gray;
+}
+.main #main-main .card:hover {
+    background-color: rgba(92, 92, 92, 0.164);
+}
+.all-songs {
+    display: flex;
+}
+
+
+/* ---------------------------- Main Link ------------------------ */
+
+.main-last-links {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    margin-top: 50px;
+}
+.main-last-links div {
+    height: 200px;
+    width:180px;
+    text-decoration: none;
+    font-style: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.main-last-links div h3 {
+    font-size: 15px;
+    padding: 5px;
+}
+.main-last-links div a {
+    width: auto;
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    padding: 5px;
+}
+.main-last-links div a span:hover {
+    text-decoration: underline;
+    color: rgb(221, 221, 221);
+}
+hr {
+    width: 97%;
+    border: 0.5px solid gray;
+    margin-left: 18px;
+}
+
+.main-last-links ul {
+    height: 70px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.main-last-links ul i {
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+.main-last-links ul i:hover {
+    background-color: rgb(116, 116, 116);
+}
+
+.footer {
+    width: 100%;
+    padding: 60px 22px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer div {
+    height: 50px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer div a{
+    height: 15px;
+    text-decoration: none;
+    color: rgb(177, 177, 177);
+    font-size: 13px;
+}
+.footer .copyright {
+    color: rgb(177, 177, 177);
+    height: 30px;
+    width: 130px;
+    font-size: 12px;
+}
+.footer div a:hover {
+    color: white;
+}
+
+
+
+/* --------------------------- Music Control --------------------- */
+
+
+.music-control {
+    height: 80px;
+    width: 100%;
+    color: white;
+    margin-top: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+.music-control .first {
+    width: 60%;
+    height: 40px;
+}
+.music-control .first .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-control .first .item-1 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.music-control .first .item .item-1 #shuffle {
+    font-size: 20px;
+    color: rgb(92, 92, 92);
+}
+.music-control .first .item .item-1 #backward {
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(163, 163, 163);
+}
+.music-control .first .item .item-1 #play {
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+.music-control .first .item .item-1 #forward {
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(163, 163, 163);
+}
+.music-control .first .item .item-1 #repeat {
+    font-size: 18px;
+    color: rgb(92, 92, 92);
+}
+.music-control .first .item .item-1 #shuffle:hover, .music-control .first .item .item-1 #backward:hover, .music-control .first .item .item-1 #forward:hover, .music-control .first .item .item-1 #repeat:hover {
+    color: rgb(255, 255, 255);
+    transition: .2s;
+}
+.music-control .first .item .item-1 #play:hover {
+    color: white;
+    transform: scale(1.05);
+    transition: .2s;
+}
+.music-control .first .item-2 {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-control .first .item-2 div {
+    margin: 7px;
+    font-size: 13px;
+}
+#progress {
+    -webkit-appearance: none;
+    width: 75%;
+    height: 3.5px;
+    background-color: gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-color: #1ed760;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+#progress-bar {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 3.5px;
+    background-color: gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-color: #1ed760;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+.second {
+    height: 80px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    cursor: pointer;
+}
+.second #item-1 i:hover {
+    color: white;
+    transition: .2s;
+}
+.second #item-1 {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.second #item-1 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second #item-1 div i {
+    padding-right: 5px;
+}

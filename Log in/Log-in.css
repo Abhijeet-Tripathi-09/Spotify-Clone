@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.main {
+    height: 1072.81px;
+    width: 1423px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+.container {
+    min-height: 1008px;
+    width: 734px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.container #logo {
+    height: 36px;
+    margin: 32px 0 24px 0;
+}
+.container h1{
+    height: 44px;
+    width: 734px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 32px;
+}
+.container .log-in-with {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .log-in-with #google {
+    height: 48px;
+    width: 324px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 31px;
+    margin: 0 0 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.container .log-in-with #google img {
+    height: 24px;
+    width: 24px;
+}
+.container .log-in-with #google span {
+    width: 181.89px;
+    font-size: 15px;
+    margin: 5px 27.25px;
+    color: white;
+    font-weight: 600;
+}
+.container .log-in-with #facebook {
+    height: 48px;
+    width: 324px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 31px;
+    margin: 0 0 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.container .log-in-with #facebook img {
+    height: 24px;
+    width: 24px;
+}
+.container .log-in-with #facebook span {
+    width: 181.89px;
+    font-size: 15px;
+    margin: 5px 27.25px;
+    color: white;
+    font-weight: 600;
+}
+.container .log-in-with #apple {
+    height: 48px;
+    width: 324px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 31px;
+    margin: 0 0 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.container .log-in-with #apple img {
+    height: 24px;
+    width: 24px;
+    color: white;
+}
+.container .log-in-with #apple span {
+    width: 181.89px;
+    font-size: 15px;
+    margin: 5px 27.25px;
+    color: white;
+    font-weight: 600;
+}
+.container .log-in-with #phone {
+    height: 48px;
+    width: 324px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 31px;
+    margin: 0 0 8px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container .log-in-with #google:hover, .container .log-in-with #facebook:hover, .container .log-in-with #apple:hover, .container .log-in-with #phone:hover {
+    border-color: white;
+}
+
+hr {
+    height: 1px;
+    width: 534px;
+    margin: 32px 100px;
+    border-color: rgba(128, 128, 128, 0.185);
+    border-top: none;
+}
+
+.email-address {
+    height: 92px;
+    width: 324px;
+    padding: 0 0 16px;
+}
+.email-address h4 {
+    height: 28px;
+    font-size: 0.875rem;
+    padding: 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.email-address input {
+    height: 48px;
+    width: 324px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background-color: #121212;
+    color: white;
+    border: 1px solid gray;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .1s;
+}
+.password {
+    height: 92px;
+    width: 324px;
+    padding: 0 0 16px;
+}
+.password h4 {
+    height: 28px;
+    font-size: 0.875rem;
+    padding: 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.password input {
+    height: 48px;
+    width: 324px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    background-color: #121212;
+    color: white;
+    border: 1px solid gray;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .1s;
+}
+
+.email-address input:hover, .password input:hover {
+    border: 1px solid white;
+}
+
+
+/* ------------------------- Button ------------------------- */
+
+
+.checkbox-wrapper-7 .tgl {
+display: none;
+}
+.checkbox-wrapper-7 .tgl,
+.checkbox-wrapper-7 .tgl:after,
+.checkbox-wrapper-7 .tgl:before,
+.checkbox-wrapper-7 .tgl *,
+.checkbox-wrapper-7 .tgl *:after,
+.checkbox-wrapper-7 .tgl *:before,
+.checkbox-wrapper-7 .tgl + .tgl-btn {
+box-sizing: border-box;
+}
+.checkbox-wrapper-7 .tgl::-moz-selection,
+.checkbox-wrapper-7 .tgl:after::-moz-selection,
+.checkbox-wrapper-7 .tgl:before::-moz-selection,
+.checkbox-wrapper-7 .tgl *::-moz-selection,
+.checkbox-wrapper-7 .tgl *:after::-moz-selection,
+.checkbox-wrapper-7 .tgl *:before::-moz-selection,
+.checkbox-wrapper-7 .tgl + .tgl-btn::-moz-selection,
+.checkbox-wrapper-7 .tgl::selection,
+.checkbox-wrapper-7 .tgl:after::selection,
+.checkbox-wrapper-7 .tgl:before::selection,
+.checkbox-wrapper-7 .tgl *::selection,
+.checkbox-wrapper-7 .tgl *:after::selection,
+.checkbox-wrapper-7 .tgl *:before::selection,
+.checkbox-wrapper-7 .tgl + .tgl-btn::selection {
+background: none;
+}
+.checkbox-wrapper-7 .tgl + .tgl-btn {
+outline: 0;
+display: block;
+width: 30px;
+height: 17px;
+position: relative;
+cursor: pointer;
+-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+}
+.checkbox-wrapper-7 .tgl + .tgl-btn:after,
+.checkbox-wrapper-7 .tgl + .tgl-btn:before {
+position: relative;
+display: block;
+content: "";
+width: 50%;
+height: 100%;
+}
+.checkbox-wrapper-7 .tgl + .tgl-btn:after {
+left: 0;
+}
+.checkbox-wrapper-7 .tgl + .tgl-btn:before {
+display: none;
+}
+.checkbox-wrapper-7 .tgl:checked + .tgl-btn:after {
+left: 50%;
+}
+
+.checkbox-wrapper-7 .tgl-ios + .tgl-btn {
+background: #777777;
+border-radius: 2em;
+padding: 2px;
+transition: all 0.4s ease;
+border: 1px solid #777777;
+}
+.checkbox-wrapper-7 .tgl-ios + .tgl-btn:after {
+border-radius: 2em;
+background: #000000;
+transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+}
+.checkbox-wrapper-7 .tgl-ios + .tgl-btn:hover:after {
+will-change: padding;
+}
+.checkbox-wrapper-7 .tgl-ios + .tgl-btn:active {
+box-shadow: inset 0 0 0 2em #e8eae9;
+}
+.checkbox-wrapper-7 .tgl-ios + .tgl-btn:active:after {
+padding-right: 0.8em;
+}
+.checkbox-wrapper-7 .tgl-ios:checked + .tgl-btn {
+background: #1ED760;
+}
+.checkbox-wrapper-7 .tgl-ios:checked + .tgl-btn:active {
+box-shadow: none;
+}
+.checkbox-wrapper-7 .tgl-ios:checked + .tgl-btn:active:after {
+margin-left: -0.8em;
+}
+
+
+
+.remember-me {
+    height: 32px;
+    width: 324px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.remember-me h6 {
+    padding: 0 24px 0 12px;
+}
+
+#log-in-btn {
+    height: 112px;
+    width: 324px;
+    padding: 32px 0;
+}
+#log-in-btn button {
+    height: 50px;
+    width: 324px;
+    background-color: #1ED760;
+    border-radius: 50px;
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#log-in-btn button:hover {
+    transform: scale(1.05);
+}
+#forgot-pass {
+    height: 22px;
+    width: 324px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#forgot-pass h2 {
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .1s;
+}
+#forgot-pass h2:hover {
+    color: #1ED760;
+}
+
+
+#sign-up-txt {
+    height: 104px;
+    width: 734px;
+    padding: 16px 0;
+}
+#sign-up-txt h2 {
+    height: 33px;
+    width: 734px;
+    margin: 19.92px 0;
+    color: gray;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign-up-txt h2 span {
+    color: white;
+    text-decoration: underline;
+    margin: 0 0 0 8px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+#sign-up-txt h2 span:hover {
+    color: #1ED760;
+}
+
+#last-line {
+    height: 81px;
+    width: 1423px;
+    padding: 32px;
+    background-color: black;
+    color: white;
+}
+
+#last-line h3 {
+    color: #a7a7a7;
+    font-size: 11px;
+    text-align: center;
+}
+#last-line h3 span  {
+    text-decoration: underline;
+    cursor: pointer;
+}

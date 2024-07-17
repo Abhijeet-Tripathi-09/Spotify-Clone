@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    height: 96px;
+    width: 1423px;
+    padding: 32px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header #logo {
+    height: 40px;
+    width: 40px;
+}
+
+.section {
+    height: 642px;
+    width: 1423px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section .container {
+    height: 642px;
+    width: 388px;
+    padding: 0 32px;
+}
+.section .container h1 {
+    height: 96px;
+    width: 324px;
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+form {
+    height: 126px;
+    width: 324px;
+}
+form .email-address {
+    height: 22px;
+    width: 324px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+form .email-address h4 {
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+}
+form #input {
+    height: 86px;
+    width: 324px;
+    padding: 8px 0 0 ;
+}
+form #input input {
+    height: 48px;
+    width: 324px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background-color: #121212;
+    color: white;
+}
+form #input input::placeholder {
+    color: rgb(219, 219, 219);
+    font-size: 15px;
+}
+
+form #input div {
+    height: 22px;
+    width: 324px;
+    margin: 8px 0 0;
+}
+form #input div a {
+    height: 20px;
+    font-size: 14px;
+    color: #1ED760;
+
+}
+
+form #next-btn {
+    margin: 20px 0 0;
+}
+form #next-btn button {
+    height: 48px;
+    width: 324px;
+    background-color: #1ED760;
+    padding: 8px 32px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.or {
+    height: 20px;
+    width: 324px;
+    border-top: 1px solid gray;
+    margin: 40px 0 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or::before {
+    height: 40px;
+    width: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    content: "or";
+    color: white;
+    background-color: black;
+}
+
+
+.container .sign-up-with {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    transition: .2s;
+}
+.container .sign-up-with #google {
+    height: 48px;
+    width: 324px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 31px;
+    margin: 0 0 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.container .sign-up-with #google img {
+    height: 24px;
+    width: 24px;
+}
+.container .sign-up-with #google span {
+    width: 181.89px;
+    font-size: 15px;
+    margin: 5px 27.25px;
+    color: white;
+    font-weight: 600;
+}
+.container .sign-up-with #facebook {
+    height: 48px;
+    width: 324px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 31px;
+    margin: 0 0 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.container .sign-up-with #facebook img {
+    height: 24px;
+    width: 24px;
+}
+.container .sign-up-with #facebook span {
+    width: 181.89px;
+    font-size: 15px;
+    margin: 5px 27.25px;
+    color: white;
+    font-weight: 600;
+}
+.container .sign-up-with #apple {
+    height: 48px;
+    width: 324px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 31px;
+    margin: 0 0 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.container .sign-up-with #apple img {
+    height: 24px;
+    width: 24px;
+    color: white;
+}
+.container .sign-up-with #apple span {
+    width: 181.89px;
+    font-size: 15px;
+    margin: 5px 27.25px;
+    color: white;
+    font-weight: 600;
+}
+
+.container .sign-up-with #google:hover, .container .sign-up-with #facebook:hover, .container .sign-up-with #apple:hover {
+    border-color: white;
+}
+
+.hr {
+    width: 324px;
+    border-top: 1px solid rgba(128, 128, 128, 0.062);
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-with h2 {
+    height: 22px;
+    width: 324px;
+    font-size: 15px;
+    color: rgb(168, 168, 168);
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up-with h2 span a {
+    margin-left: 5px;
+    color: white;
+    transition: .1s;
+}
+
+.sign-up-with h2 span a:hover {
+    color: #1ED760;
+}
+
+.footer {
+    width: 1423px;
+    color: rgb(168, 168, 168);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer h3 {
+    width: 324px;
+    font-size: 12px;
+}
+.footer h3 span {
+    text-decoration: underline;
+}

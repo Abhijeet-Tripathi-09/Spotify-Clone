@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px 0 145px;
+}
+
+#logo {
+    height: 40px;
+    color: white;
+    cursor: pointer;
+}
+.navbar-item {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-item a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.navbar-item a:hover {
+    color: #1ED760;
+}
+
+.navbar button {
+    height: 40px;
+    width: 80px;
+    border-radius: 7px;
+    background-color: #1ED760;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: 1px solid #1ED760;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover {
+    background-color: hsl(141, 51%, 44%);
+    border-color: hsl(0, 0%, 0%);
+    color: rgb(255, 255, 255);
+}
+.navbar-item img {
+    color: white;  
+}
+
+/* ---------------------------------------------------- */
+
+.first{
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(60deg, hsl(293, 100%, 64%), #7700ff);
+}
+.iphone {
+    position: absolute;
+    top: 23%;
+    left: 15.5%;
+    height: 550px;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 40px 40px 0 0;
+}
+#iphone-speaker {
+    position: absolute;
+    top: 4.5%;
+    left: 42%;
+    height: 6px;
+    width: 45px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+}
+.iphone img {
+    position: absolute;
+    top: 10.7%;
+    left: 2.5%;
+    height: 440px;
+}
+#first-text {
+    position: absolute;
+    top: 33%;
+    left: 41%;
+    height: 300px;
+    width: 700px;
+    font-size: 63px;
+    font-weight: 600;
+    color: #fff;
+}
+#first-text span button {
+    padding: 17px 38px ;
+    background-color: #fff;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#first-text span button:hover {
+    background-color: rgb(235, 235, 235);
+    transform: scale(1.05);
+}
+
+
+/* ----------------------------- TWO ----------------------------- */
+
+.two {
+    height: 590px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two-contain {
+    height: 450px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.two-contain h1{
+    font-size: 40px;
+    text-align: center;
+}
+.two-contain-divs {
+    height: 400px;
+    width: 78%;
+    /* border: 1px solid rgb(143, 143, 255); */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.two-logo {
+    height: 440px;
+    width: 250px;
+    /* border: 1px solid blue; */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.two-logo div{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.two-logo h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.two-logo h3 {
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    color: rgb(58, 58, 58);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.two-logo div img {
+    height: 140px;
+}
+
+/* ----------------------------- THREE -------------------------- */
+
+
+.three {
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(180deg, hsl(293, 100%, 64%), #7700ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.three h1 {
+    font-size: 45px;
+    padding: 5px;
+    color: #fff;
+}
+
+/* ----------------------------- FOUR -------------------------- */
+
+.four {
+    min-height: 590px;
+    width: 100%;
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.four-question h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 80px;
+}
+.four-question-list {
+    width: 100%;
+    /* border: 1px solid white; */
+    padding: 0 150px;
+}
+.four-question-list h3 {
+    font-size: 18px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: 2px;
+}
+.four-question-list h3:hover {
+    border: 1px solid rgba(128, 128, 128, 0.07);
+    background-color: rgba(128, 128, 128, 0.07);
+    text-decoration: underline;
+}
+.four-question-list h3 span i {
+    font-size: 22px;
+}
+.four-question-list pre {
+    min-height: 100px;
+    width: 100%;
+    padding: 20px 20px 30px 20px ;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    display: none;
+}
+.four-question-list pre span {
+    color: green;
+    font-weight: 600;
+}
+
+
+/* ----------------------------- FIVE -------------------------- */
+
+.five {
+    height: 450px;
+    width: 100%;
+    background: linear-gradient(360deg, hsl(293, 100%, 64%), #7700ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.five h1 {
+    font-size: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.five h1 span button {
+    padding: 17px 38px ;
+    background-color: #fff;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.five h1 span button:hover {
+    background-color: rgb(235, 235, 235);
+    transform: scale(1.05);
+}
+
+/* ----------------------------- FOOTER -------------------------- */
+
+.footer {
+    height: 560px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-1 div {
+    display: flex;
+}
+.footer-1 {
+    height: 428px;
+    width: 1170px;
+    display: flex;
+    color: #fff;
+    margin: 0 126.5px;
+    padding: 20px 20px 0px 20px;
+    /* border: 1px solid red; */
+    flex-direction: column;
+}
+.footer-content {
+    display: flex;
+    margin-left: 35px;
+}
+.footer-content ul {
+    height: 350px;
+    width: 116px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.footer-content ul h2 {
+    font-size: 12px;
+    margin: 22px 0;
+    color: rgb(156, 156, 156);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-content ul a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 23px;
+    line-height: 22px;
+    cursor: pointer;
+}
+.footer-content ul a span:hover {
+    color: #1ED760;
+}
+.social-media {
+    height: 100px;
+    width: 380px;
+}
+.social-media div {
+    display: flex;
+    justify-content: end;
+    padding: 16px 0;
+    margin-left: 180px;
+}
+.social-media div i {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-left: 17px;
+    background-color: rgba(231, 231, 231, 0.219);
+    cursor: pointer;
+}
+.social-media div i:hover {
+    color: #1ED760;
+}
+.india {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 10px;
+    cursor: pointer;
+    color: grey;
+}
+.india:hover {
+    color: #1ED760;
+}
+.footer-end {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-end ul a{
+    font-size: 13px;
+    text-decoration: none;
+    color: grey;
+    margin-right: 15px;
+}
+.footer-end ul a:hover {
+    color: #1ED760;
+}
+.footer-end h3 {
+    font-size: 12px;
+    color: grey;
+}
